@@ -1,7 +1,7 @@
 CREATE TABLE chapter
 (
     id BIGSERIAL PRIMARY KEY,
-    name       TEXT NOT NULL
+    name TEXT NOT NULL
 );
 
 CREATE TABLE card
