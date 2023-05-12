@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00b239ab-b27f-456b-9f8e-688daf21dd0f" name="Changes" comment="first commit with table">
+    <list default="true" id="00b239ab-b27f-456b-9f8e-688daf21dd0f" name="Changes" comment="second commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Application.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +93,12 @@
       <data-source id="703fcfa5-09a7-4764-86c1-2419ef9157b0" />
       <method v="2" />
     </configuration>
+    <configuration name="V4_with_counter.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/src/main/resources/db/migration/V4_with_counter.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="703fcfa5-09a7-4764-86c1-2419ef9157b0" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -100,7 +108,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1683752022878</updated>
-      <workItem from="1683752025171" duration="16133000" />
+      <workItem from="1683752025171" duration="18876000" />
     </task>
     <task id="LOCAL-00001" summary="first commit with table">
       <created>1683794191005</created>
@@ -116,7 +124,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683882821337</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="first commit with table">
+      <created>1683888903029</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683888903029</updated>
+    </task>
+    <task id="LOCAL-00004" summary="second commit">
+      <created>1683888993751</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683888993751</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +157,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit with table" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit with table" />
+    <MESSAGE value="second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
   </component>
 </project>
