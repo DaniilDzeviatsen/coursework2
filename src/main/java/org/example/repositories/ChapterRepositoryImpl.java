@@ -38,6 +38,11 @@ public class ChapterRepositoryImpl implements ChapterRepository {
         }
     }
 
+    @Override
+    public void showAllCards(long ChapterId) {
+
+    }
+
 
     @Override
     public List<Chapter> getAllChapters() {
