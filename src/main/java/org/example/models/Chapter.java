@@ -6,10 +6,8 @@ public class Chapter {
     private long totalCardsNum;
     private long numOfLearnedCards;
 
-    public Chapter(long chapterId, String name, long totalCardsNum, long numOfLearnedCards) {
+    public Chapter(long chapterId, String name) {
         this.chapterId = chapterId;
         this.name = name;
-        this.numOfLearnedCards=numOfLearnedCards;
-        this.totalCardsNum=totalCardsNum;
     }
 }

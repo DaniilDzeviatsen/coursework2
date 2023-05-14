@@ -3,10 +3,9 @@ package org.example.repositories;
 import org.example.models.Chapter;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface ChapterRepository {
-
-    void ShowAllChaptersNames();
 
     List<Chapter> getAllChapters();
 
