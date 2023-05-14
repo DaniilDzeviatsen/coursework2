@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="00b239ab-b27f-456b-9f8e-688daf21dd0f" name="Changes" comment="with some methods">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Chapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Chapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repositories/ChapterRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repositories/ChapterRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Application.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +141,7 @@
       <workItem from="1683752025171" duration="20181000" />
       <workItem from="1683956877511" duration="21117000" />
       <workItem from="1684060377302" duration="3541000" />
-      <workItem from="1684070887449" duration="995000" />
+      <workItem from="1684070887449" duration="2502000" />
     </task>
     <task id="LOCAL-00001" summary="first commit with table">
       <created>1683794191005</created>
@@ -214,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684063679531</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="with some methods">
+      <created>1684072294760</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1684072294760</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,7 +249,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/repositories/ChapterRepositoryImpl.java</url>
-          <line>63</line>
+          <line>76</line>
           <properties class="org.example.repositories.ChapterRepositoryImpl" method="getAllChapters">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
