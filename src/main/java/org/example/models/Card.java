@@ -12,4 +12,14 @@ public class Card {
         this.is_remembered = is_remembered;
         this.id = id;
     }
+
+    @Override
+    public String toString() {
+        return "Card{" +
+                "question='" + question + '\'' +
+                ", answer='" + answer + '\'' +
+                ", is_remembered=" + is_remembered +
+                ", id=" + id +
+                '}';
+    }
 }

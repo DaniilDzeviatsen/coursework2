@@ -9,7 +9,7 @@ public interface ChapterRepository {
 
     List<Chapter> getAllChapters();
 
-    void createNewChapter(String name, long chapterId, long totalCardsNum, long numOfLearnedCards);
+    void createNewChapter(String name);
 
     void deleteChapter(long chapterId);
 

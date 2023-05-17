@@ -18,7 +18,7 @@ public class ChapterRepositoryImpl implements ChapterRepository {
 
 
     @Override
-    public void createNewChapter(String name, long id, long totalCardsNum, long numOfLearnedCards) {
+    public void createNewChapter(String name) {
         String sql = """
                 INSERT INTO CHAPTER (NAME)
                 VALUES (?);
@@ -27,11 +27,9 @@ public class ChapterRepositoryImpl implements ChapterRepository {
                 Connection connection = db.getConnection();
                 PreparedStatement statement = connection.prepareStatement(sql);
         ) {
-            statement.setString(name),
-                    statement.setLong(id),
-                    statement.setLong(0),
-                    statement.setLong(0);
-        } catch (SQLException e) {
+            statement.setString(1, name);
+            statement.executeUpdate();}
+        catch (SQLException e){
             throw new RepositoryException(e);
         }
     }
@@ -61,10 +59,7 @@ public class ChapterRepositoryImpl implements ChapterRepository {
                        CARD.IS_REMEMBERED AS REMEMBERED
                 FROM CARD
                 WHERE CARD.CHAPTER_ID = ?
-                  AND NOT CARD.IS_REMEMBERED
-                ORDER BY CARD.ID
-                LIMIT 1 OFFSET 0;
-                """;
+                                 """;
         try (
                 Connection connection = db.getConnection();
                 PreparedStatement statement = connection.prepareStatement(sql);
@@ -74,10 +69,10 @@ public class ChapterRepositoryImpl implements ChapterRepository {
             List<Card> result = new ArrayList<>();
             while (resultSet.next()) {
                 result.add(new Card(
-                        resultSet.getString("question"),
-                        resultSet.getString("answer"),
-                        resultSet.getBoolean("is_remembered"),
-                        resultSet.getLong("id")
+                        resultSet.getString("QUESTION"),
+                        resultSet.getString("ANSWER"),
+                        resultSet.getBoolean("REMEMBERED"),
+                        resultSet.getLong("ID")
                 ));
             }
             return result;
@@ -106,10 +101,10 @@ public class ChapterRepositoryImpl implements ChapterRepository {
             List<Chapter> result = new ArrayList<>();
             while (resultSet.next()) {
                 result.add(new Chapter(
-                        resultSet.getLong("chapterId"),
-                        resultSet.getString("name"),
-                        resultSet.getLong("total number of questions"),
-                        resultSet.getLong(" number of learned questions")
+                        resultSet.getLong("CHAPTER_ID"),
+                        resultSet.getString("NAME"),
+                        resultSet.getLong("TOTAL_QUESTIONS"),
+                        resultSet.getLong("LEARNED_QUESTIONS")
                 ));
             }
             return result;

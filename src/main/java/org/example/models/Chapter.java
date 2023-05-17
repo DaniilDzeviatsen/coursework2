@@ -12,4 +12,14 @@ public class Chapter {
         this.totalCardsNum=totalCardsNum;
         this.numOfLearnedCards=numOfLearnedCards;
     }
+
+    @Override
+    public String toString() {
+        return "Chapter{" +
+                "chapterId=" + chapterId +
+                ", name='" + name + '\'' +
+                ", totalCardsNum=" + totalCardsNum +
+                ", numOfLearnedCards=" + numOfLearnedCards +
+                '}';
+    }
 }
