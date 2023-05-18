@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00b239ab-b27f-456b-9f8e-688daf21dd0f" name="Changes" comment="with some methods">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/703fcfa5-09a7-4764-86c1-2419ef9157b0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/703fcfa5-09a7-4764-86c1-2419ef9157b0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Chapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Chapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repositories/CardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repositories/CardRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repositories/CardRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repositories/CardRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repositories/ChapterRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repositories/ChapterRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repositories/ChapterRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repositories/ChapterRepositoryImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="00b239ab-b27f-456b-9f8e-688daf21dd0f" name="Changes" comment="with repositories" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -156,7 +146,7 @@
       <workItem from="1683956877511" duration="21117000" />
       <workItem from="1684060377302" duration="3541000" />
       <workItem from="1684070887449" duration="4761000" />
-      <workItem from="1684303821558" duration="8368000" />
+      <workItem from="1684303821558" duration="8671000" />
     </task>
     <task id="LOCAL-00001" summary="first commit with table">
       <created>1683794191005</created>
@@ -242,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684075673574</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="with repositories">
+      <created>1684312609027</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1684312609027</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,7 +261,8 @@
     <MESSAGE value="second commit" />
     <MESSAGE value="with pgs" />
     <MESSAGE value="with some methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="with some methods" />
+    <MESSAGE value="with repositories" />
+    <option name="LAST_COMMIT_MESSAGE" value="with repositories" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
