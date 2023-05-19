@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00b239ab-b27f-456b-9f8e-688daf21dd0f" name="Changes" comment="with repositories" />
+    <list default="true" id="00b239ab-b27f-456b-9f8e-688daf21dd0f" name="Changes" comment="with repositories">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repositories/CardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repositories/CardRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repositories/CardRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repositories/CardRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repositories/ChapterRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repositories/ChapterRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repositories/ChapterRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repositories/ChapterRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db.operations/V3_filed_table.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db.operations/V4_with_all_operations.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1__initial_schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__initial_schema.sql" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -147,6 +157,7 @@
       <workItem from="1684060377302" duration="3541000" />
       <workItem from="1684070887449" duration="4761000" />
       <workItem from="1684303821558" duration="8671000" />
+      <workItem from="1684482326674" duration="2011000" />
     </task>
     <task id="LOCAL-00001" summary="first commit with table">
       <created>1683794191005</created>
@@ -269,21 +280,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/repositories/ChapterRepositoryImpl.java</url>
-          <line>85</line>
+          <line>53</line>
           <properties class="org.example.repositories.ChapterRepositoryImpl" method="getAllChapters">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/repositories/ChapterRepositoryImpl.java</url>
-          <line>53</line>
-          <properties class="org.example.repositories.ChapterRepositoryImpl" method="showAllCards">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

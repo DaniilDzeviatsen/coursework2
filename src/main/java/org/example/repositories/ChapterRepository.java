@@ -12,6 +12,4 @@ public interface ChapterRepository {
     void createNewChapter(String name);
 
     void deleteChapter(long chapterId);
-
-    List<Card> showAllCards(long ChapterId);
 }

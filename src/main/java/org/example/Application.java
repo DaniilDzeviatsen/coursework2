@@ -18,14 +18,14 @@ import static java.lang.Boolean.TRUE;
 public class Application {
     public static void main(String[] args) {
 
-       PGSimpleDataSource db=new PGSimpleDataSource();
+        PGSimpleDataSource db = new PGSimpleDataSource();
         db.setURL(System.getenv("FLASHCARDS_DB_URL"));
         db.setUser(System.getenv("FLASHCARDS_DB_USER"));
         db.setPassword(System.getenv("FLASHCARDS_DB_PASSWORD"));
 
-        ChapterRepository chapterRepository=new ChapterRepositoryImpl(db);
-        CardRepository cardRepository=new CardRepositoryImpl(db);
-        Scanner sc=new Scanner(System.in);
+        ChapterRepository chapterRepository = new ChapterRepositoryImpl(db);
+        CardRepository cardRepository = new CardRepositoryImpl(db);
+        Scanner sc = new Scanner(System.in);
        /* while (true){
             System.out.print("> ");
             String command=sc.nextLine();
@@ -38,9 +38,10 @@ public class Application {
             }
         }*/
         //String name=sc.nextLine();
-       //chapterRepository.getAllChapters().stream().forEach(System.out::println);
-cardRepository.updateMemorizing(7); ;
-       // List<Chapter> chapters=chapterRepository.getAllChapters();
         //chapterRepository.getAllChapters().stream().forEach(System.out::println);
+//cardRepository.updateMemorizing(7); ;
+        //List<Chapter> chapters=chapterRepository.getAllChapters();
+        //chapterRepository.getAllChapters().stream().forEach(System.out::println);
+        cardRepository.showAllCards(3).stream().forEach(System.out::println);
     }
 }
