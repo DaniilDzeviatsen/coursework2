@@ -1,18 +1,12 @@
 package org.example;
 
-import org.example.models.Card;
-import org.example.models.Chapter;
 import org.example.repositories.CardRepository;
 import org.example.repositories.CardRepositoryImpl;
 import org.example.repositories.ChapterRepository;
 import org.example.repositories.ChapterRepositoryImpl;
 import org.postgresql.ds.PGSimpleDataSource;
 
-import java.util.List;
 import java.util.Scanner;
-
-import static java.lang.Boolean.FALSE;
-import static java.lang.Boolean.TRUE;
 
 
 public class Application {
@@ -43,6 +37,6 @@ public class Application {
         //List<Chapter> chapters=chapterRepository.getAllChapters();
         //chapterRepository.getAllChapters().stream().forEach(System.out::println);
         //cardRepository.showAllCards(3).stream().forEach(System.out::println);
-        cardRepository.getCardsToTraining(3,1).stream().forEach(System.out::println);
+        cardRepository.getCardsToTraining(3, 1).stream().forEach(System.out::println);
     }
 }

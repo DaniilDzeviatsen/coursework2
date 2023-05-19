@@ -137,8 +137,9 @@ public class CardRepositoryImpl implements CardRepository {
                         resultSet.getBoolean("remembered"),
                         resultSet.getLong("id")
                 ));
-            }return cardList;
-        }catch (SQLException e){
+            }
+            return cardList;
+        } catch (SQLException e) {
             throw new RepositoryException(e);
         }
     }
