@@ -42,6 +42,7 @@ public class Application {
 //cardRepository.updateMemorizing(7); ;
         //List<Chapter> chapters=chapterRepository.getAllChapters();
         //chapterRepository.getAllChapters().stream().forEach(System.out::println);
-        cardRepository.showAllCards(3).stream().forEach(System.out::println);
+        //cardRepository.showAllCards(3).stream().forEach(System.out::println);
+        cardRepository.getCardsToTraining(3,1).stream().forEach(System.out::println);
     }
 }

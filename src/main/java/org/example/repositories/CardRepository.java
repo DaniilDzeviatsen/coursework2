@@ -12,4 +12,6 @@ public interface CardRepository {
     void updateMemorizing(long cardId);
 
     List<Card> showAllCards(long chapterId);
+
+    List<Card> getCardsToTraining(long chapterId, int offset);
 }

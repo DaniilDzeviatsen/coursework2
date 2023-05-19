@@ -27,7 +27,8 @@ public class CardRepositoryImpl implements CardRepository {
                 """;
         try (
                 Connection connection = db.getConnection();
-                PreparedStatement statement = connection.prepareStatement(sql);
+                PreparedStatement statement = connection.prepareStatement(sql)
+
         ) {
             statement.setLong(1, cardId);
             statement.executeUpdate();
@@ -44,7 +45,8 @@ public class CardRepositoryImpl implements CardRepository {
                 """;
         try (
                 Connection connection = db.getConnection();
-                PreparedStatement statement = connection.prepareStatement(sql);
+                PreparedStatement statement = connection.prepareStatement(sql)
+
         ) {
             statement.setLong(1, chapterId);
             statement.setString(2, question);
@@ -65,7 +67,7 @@ public class CardRepositoryImpl implements CardRepository {
                 """;
         try (
                 Connection connection = db.getConnection();
-                PreparedStatement statement = connection.prepareStatement(sql);
+                PreparedStatement statement = connection.prepareStatement(sql)
         ) {
             statement.setLong(1, cardId);
             statement.executeUpdate();
@@ -86,7 +88,8 @@ public class CardRepositoryImpl implements CardRepository {
                                  """;
         try (
                 Connection connection = db.getConnection();
-                PreparedStatement statement = connection.prepareStatement(sql);
+                PreparedStatement statement = connection.prepareStatement(sql)
+
         ) {
             statement.setLong(1, chapterId);
             ResultSet resultSet = statement.executeQuery();
@@ -101,6 +104,41 @@ public class CardRepositoryImpl implements CardRepository {
             }
             return result;
         } catch (SQLException e) {
+            throw new RepositoryException(e);
+        }
+    }
+
+    @Override
+    public List<Card> getCardsToTraining(long chapterId, int offset) {
+        String sql = """
+                SELECT card.id AS id,
+                       card.question AS question,
+                       card.answer AS answer,
+                       card.is_remembered AS remembered
+                FROM card
+                WHERE card.chapter_id = ?
+                  AND NOT card.is_remembered
+                ORDER BY card.id
+                LIMIT 1 OFFSET ?;
+                """;
+        try (
+                Connection connection = db.getConnection();
+                PreparedStatement statement = connection.prepareStatement(sql)
+
+        ) {
+            statement.setLong(1, chapterId);
+            statement.setLong(2, offset);
+            ResultSet resultSet = statement.executeQuery();
+            List<Card> cardList = new ArrayList<>();
+            while (resultSet.next()) {
+                cardList.add(new Card(
+                        resultSet.getString("question"),
+                        resultSet.getString("answer"),
+                        resultSet.getBoolean("remembered"),
+                        resultSet.getLong("id")
+                ));
+            }return cardList;
+        }catch (SQLException e){
             throw new RepositoryException(e);
         }
     }
