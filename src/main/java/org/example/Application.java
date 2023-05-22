@@ -6,11 +6,15 @@ import org.example.repositories.CardRepository;
 import org.example.repositories.CardRepositoryImpl;
 import org.example.repositories.ChapterRepository;
 import org.example.repositories.ChapterRepositoryImpl;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Scanner;
 
 
+
 public class Application {
+    private static final Logger log = LoggerFactory.getLogger(Application.class);
     public static void main(String[] args) {
         HikariConfig hikariConfig = new HikariConfig();
         hikariConfig.setJdbcUrl(System.getenv("FLASHCARDS_DB_URL"));
