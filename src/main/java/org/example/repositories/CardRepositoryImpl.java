@@ -109,7 +109,7 @@ public class CardRepositoryImpl implements CardRepository {
     }
 
     @Override
-    public List<Card> getCardsToTraining(long chapterId, int offset) {
+    public List<Card> getOneCardData(long chapterId, long offset) {
         String sql = """
                 SELECT card.id AS id,
                        card.question AS question,
